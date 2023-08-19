@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <button class="btn btn-primary d-block launchAlarm">Launch Alarm ?</button>
+
+    <div class="w-100 vh-100 alarm d-none justify-content-center align-items-center">
+        <div class="alarm-box py-5 px-5 d-flex align-items-center justify-content-between flex-column">
+            <div class="alarm-header d-flex justify-content-between align-items-center w-100">
+                <div class="day">
+                    <p class="fs-3 fw-bolder dayName">Saturday</p>
+                </div>
+                <div class="closeBtn d-flex align-items-center justify-content-center">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <div class="alarmIcon">
+                <i class="fas fa-bell fa-10x fa-beat" style="--fa-animation-duration: 3s;"></i>
+            </div>
+
+            <div class="timer d-flex justify-content-between align-content-center flex-column gap-3">
+                <div class="time">
+                    <div class="clock d-flex align-items-center gap-3 justify-content-center text-black">
+                        <div class="hour same">
+                            <p class="h"></p>
+                        </div>:
+                        <div class="same min">
+                            <p class="m"></p>
+                        </div>:
+                        <div class="same sec">
+                            <p class="s"></p>
+                        </div>:
+                        <div class="same apm">
+                            <p class="ap"></p>
+                        </div>
+                    </div>
+                    <div class="alarm-clock">
+
+                    </div>
+                </div>
+
+                <div class="selectors d-flex justify-content-center gap-3">
+                    <div class="select">
+                        <select class="houurrs">
+                            <option class="p-1" selected disabled>Hours</option>
+                        </select>
+                    </div>
+
+                    <div class="select">
+                        <select class="minnuttes">
+                            <option class="p-1" selected disabled>Minutes</option>
+                        </select>
+                    </div>
+
+                    <div class="select">
+                        <select class="secconds">
+                            <option class="p-1" selected disabled>Seconds</option>
+                        </select>
+                    </div>
+
+                    <div class="select">
+                        <select class="secconds">
+                            <option class="p-1" selected disabled>APM</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="btns d-flex justify-content-center  ">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="btnBox pt-3">
+                                <button class="wakeUpBtn btn btn-success">عايز تصحي امتي يا بيه ؟</button>
+                            </div>
+                        </div>
+
+                        <div class="col-6 d-flex justify-content-end">
+                            <div class="btnBox pt-3">
+                                <button class="pauseBtn btn btn-success">خلاص صحيت</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="checkModal w-100 vh-100 alarm d-none justify-content-center align-items-center">
+        <div class="paraDiv text-center py-5 px-5 d-flex align-items-center justify-content-around flex-column">
+            <div class="closeBtn d-flex align-items-center justify-content-center">
+                <span></span>
+                <span></span>
+            </div>
+            <div class="text-to-check">
+                <p class="fw-bolder fs-3 mb-1">اكتب دي علشان اتأكد انك صحيت🌚</p>
+                <p class="cheched-text fs-4 fw-bold">خلاص يا عم صحيت اهو</p>
+            </div>
+            <div class="input-div w-75">
+                <input type="text" class="form form-control m-auto w-75 input-text">
+            </div>
+            <button class="btn btn-info checkBtn">دوس هنا متتعبنيش</button>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
